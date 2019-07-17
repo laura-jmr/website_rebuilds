@@ -1,12 +1,22 @@
-body {
-    background-image: url(img/background.png);
-    background-repeat: no-repeat;
-    background-position: right top; 
+.background-img {
+    display: flex;
+    margin-left: 60vw;
 }
+
+.background-img img {
+    position: absolute;
+    z-index: 0;
+}
+
 
 * {
     margin: 0;
+    z-index: 1;
 }
+
+
+/*------------------navigation------------------*/
+
 
 nav {
     display: flex;
@@ -57,4 +67,51 @@ nav {
     background-color: black;
     width: 20px;
     height: 1px;
+}
+
+
+/*------------------main------------------*/
+
+
+main {
+    display: flex;
+    padding-left: 15vw;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+.main-text span:first-child {
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    color: #e47fae;
+    margin-bottom: 50px;
+}
+.main-text span:last-child {
+    font-size: 2.7rem;
+    color: #9f82d3;
+}
+.main-text h1 {
+    font-size: 2.7rem;
+    width: min-content;
+    white-space: nowrap;
+    margin-bottom: 50px;
+}
+.main-text p {
+    font-size: 1.2rem;
+    width: min-content;
+    white-space: nowrap;
+    line-height: 40px;
+    margin-bottom: 50px;
+}
+
+.contact-link a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+.contact-link span {
+    color: #e47fae;
+    font-weight: bold;
 }
